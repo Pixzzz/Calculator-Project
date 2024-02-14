@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <input id="inputDisplay" readonly><br>
+        <div id="items">
+            <button onclick="appendItem('7')">7</button>
+            <button onclick="appendItem('8')">8</button>
+            <button onclick="appendItem('9')">9</button>
+            <button onclick="appendItem('*')" id="colorBtn">*</button>
+            <button onclick="appendItem('4')">4</button>
+            <button onclick="appendItem('5')">5</button>
+            <button onclick="appendItem('6')">6</button>
+            <button onclick="appendItem('+')" id="colorBtn">+</button>
+            <button onclick="appendItem('1')">1</button>
+            <button onclick="appendItem('2')">2</button>
+            <button onclick="appendItem('3')">3</button>
+            <button onclick="appendItem('-')" id="colorBtn">-</button>
+            <button onclick="clearInput()" >AC</button>
+            <button onclick="appendItem('0')">0</button>
+            <button onclick="appendItem('.')">.</button>
+            <button onclick="appendItem('/')" id="colorBtn">/</button>
+            <button onclick="calculate()" id="equalsBtn">=</button>
+        </div>
+        
+            <table id="table">
+            <thead>
+                <th>Historial</th>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
